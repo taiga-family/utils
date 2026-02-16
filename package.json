@@ -1,0 +1,40 @@
+{
+    "name": "@taiga-ui/utils",
+    "version": "0.0.0",
+    "private": true,
+    "license": "Apache-2.0",
+    "workspaces": [
+        "projects/*"
+    ],
+    "scripts": {
+        "cspell": "cspell --relative --dot --gitignore .",
+        "lint": "eslint .",
+        "prettier": "prettier !package-lock.json . --ignore-path .gitignore",
+        "release": "npx nx run-many --target publish --all"
+    },
+    "prettier": "@taiga-ui/prettier-config",
+    "devDependencies": {
+        "@nx/rollup": "22.5.1",
+        "@nx/workspace": "22.5.1",
+        "@taiga-ui/configs": "0.414.0",
+        "nx": "22.5.1",
+        "typescript": "5.8.3"
+    },
+    "cspell": {
+        "import": [
+            "@taiga-ui/cspell-config/cspell.config.js"
+        ],
+        "files": [
+            "*/*.*"
+        ]
+    },
+    "syncer": {
+        "includePaths": [
+            "./projects",
+            "./package-lock.json"
+        ],
+        "matchPackageNames": [
+            "@taiga-ui/*"
+        ]
+    }
+}

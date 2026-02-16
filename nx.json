@@ -1,0 +1,31 @@
+{
+    "$schema": "./node_modules/nx/schemas/nx-schema.json",
+    "defaultBase": "origin/main",
+    "namedInputs": {
+        "default": ["{projectRoot}/**/*", "sharedGlobals"],
+        "sharedGlobals": [
+            "{workspaceRoot}/package-lock.json",
+            "{workspaceRoot}/tsconfig*.json",
+            "{workspaceRoot}/nx.json",
+            "{workspaceRoot}/*.yml",
+            "{workspaceRoot}/*.md"
+        ],
+        "production": ["default"]
+    },
+    "tui": {
+        "enabled": false
+    },
+    "parallel": 1,
+    "targetDefaults": {
+        "test": {
+            "cache": true
+        },
+        "build": {
+            "cache": true
+        }
+    },
+    "workspaceLayout": {
+        "libsDir": "projects",
+        "appsDir": "projects"
+    }
+}
