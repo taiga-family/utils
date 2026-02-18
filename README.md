@@ -1,0 +1,5 @@
+### ♻️ Packages
+
+| **Package**                                                            | **Version**                                                             | **README**                                                                             | **Downloads**                                                                                                 |
+| ---------------------------------------------------------------------- | ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| [@taiga-ui/font-watcher](https://npmjs.com/package/@taiga-ui/tsconfig) | ![](https://img.shields.io/npm/v/%40taiga-ui%2Ffont-watcher/latest.svg) | [![](https://img.shields.io/badge/README--green.svg)](projects/font-watcher/README.md) | [![](https://img.shields.io/npm/dw/@taiga-ui/font-watcher)](https://npmjs.com/package/@taiga-ui/font-watcher) |
