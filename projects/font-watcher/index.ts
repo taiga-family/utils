@@ -29,7 +29,30 @@ export function tuiFontSizeWatcher(
     iframe.ownerDocument?.defaultView?.addEventListener('resize', resize);
 
     const doc = iframe.contentDocument;
-    const observer = new ResizeObserver(() => callback(doc?.body.offsetHeight || 0));
+
+    let scheduled = false;
+    let last = -1;
+
+    const observer = new ResizeObserver(() => {
+        if (scheduled) {
+            return;
+        }
+
+        scheduled = true;
+
+        requestAnimationFrame(() => {
+            const next = doc?.body.offsetHeight || 0;
+
+            scheduled = false;
+
+            if (next === last) {
+                return;
+            }
+
+            last = next;
+            callback(next);
+        });
+    });
 
     Object.assign(iframe.style, IFRAME);
     Object.assign(doc?.body.style || {}, BODY);
