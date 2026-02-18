@@ -1,6 +1,6 @@
 {
     "name": "@taiga-ui/utils",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "private": true,
     "license": "Apache-2.0",
     "workspaces": [
@@ -16,7 +16,7 @@
     "devDependencies": {
         "@nx/rollup": "22.5.1",
         "@nx/workspace": "22.5.1",
-        "@taiga-ui/configs": "0.414.0",
+        "@taiga-ui/configs": "0.416.0",
         "nx": "22.5.1",
         "typescript": "5.8.3"
     },
