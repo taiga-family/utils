@@ -15,7 +15,7 @@
                 "assets": ["projects/{projectName}/README.md"],
                 "compiler": "tsc",
                 "external": "all",
-                "format": ["esm"],
+                "format": ["esm", "cjs"],
                 "generateExportsField": true
             }
         },

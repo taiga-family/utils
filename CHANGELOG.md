@@ -1,4 +1,4 @@
-### [0.1.0]() (2026-02-17)
+### [0.1.0](https://github.com/taiga-family/utils/releases/tag/v0.1.0) (2026-02-17)
 
 ### 🚀 Features
 
