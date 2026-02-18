@@ -30,7 +30,7 @@ jobs:
       - uses: taiga-family/ci/actions/run/read-package-json@v1.187.0
         id: info
         with:
-          path: ./projects/editor/package.json
+          path: ./package.json
 
       - name: Announce to Telegram
         if: steps.release-it.outputs.released == 'true'
@@ -40,7 +40,7 @@ jobs:
           topicId: ${{ secrets.TAIGA_TELEGRAM_CHAT_THREAD_ID }}
           token: ${{ secrets.TAIGA_TELEGRAM_BOT_TOKEN }}
           version: v${{ steps.info.outputs.version }}
-          textLink: ${{ steps.info.outputs.name }}
+          textLink: Utils
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
