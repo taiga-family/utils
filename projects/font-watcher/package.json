@@ -4,7 +4,7 @@
     "description": "Taiga UI font watcher",
     "repository": {
         "type": "git",
-        "url": "https://github.com/taiga-family/configurations.git"
+        "url": "https://github.com/taiga-family/utils.git"
     },
     "license": "Apache-2.0",
     "publishConfig": {

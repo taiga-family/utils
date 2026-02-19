@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unnecessary-condition, compat/compat */
 const IFRAME: Partial<CSSStyleDeclaration> = {
     position: 'fixed',
     visibility: 'hidden',
@@ -20,13 +19,13 @@ export function tuiFontSizeWatcher(
             innerWidth = 0,
             outerWidth = 0,
             devicePixelRatio = 0,
-        } = iframe.ownerDocument?.defaultView || {};
+        } = iframe.ownerDocument.defaultView || {};
 
         iframe.width = `${innerWidth === outerWidth ? innerWidth : innerWidth / devicePixelRatio}`;
     };
 
-    iframe.ownerDocument?.body.append(iframe);
-    iframe.ownerDocument?.defaultView?.addEventListener('resize', resize);
+    iframe.ownerDocument.body.append(iframe);
+    iframe.ownerDocument.defaultView?.addEventListener('resize', resize);
 
     const doc = iframe.contentDocument;
     const observer = new ResizeObserver(() => callback(doc?.body.offsetHeight || 0));
@@ -40,7 +39,7 @@ export function tuiFontSizeWatcher(
 
     return () => {
         observer.disconnect();
-        iframe.ownerDocument?.defaultView?.removeEventListener('resize', resize);
+        iframe.ownerDocument.defaultView?.removeEventListener('resize', resize);
         iframe.remove();
     };
 }
