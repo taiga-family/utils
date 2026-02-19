@@ -1,3 +1,5 @@
+### [0.5.0](https://github.com/taiga-family/utils/compare/v0.4.0...v0.5.0) (2026-02-19)
+
 ### [0.4.0](https://github.com/taiga-family/utils/compare/v0.3.0...v0.4.0) (2026-02-18)
 
 ### 🐞 Bug Fixes
