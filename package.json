@@ -12,6 +12,20 @@
         "prettier": "prettier !package-lock.json . --ignore-path .gitignore",
         "release": "npx nx run-many --target publish --all"
     },
+    "commitlint": {
+        "extends": [
+            "@taiga-ui/commitlint-config"
+        ]
+    },
+    "lint-staged": {
+        "*.{js,ts,html,svg,yml,md,less,json}": [
+            "prettier --write",
+            "cspell --no-must-find-files"
+        ]
+    },
+    "browserslist": [
+        "extends @taiga-ui/browserslist-config"
+    ],
     "prettier": "@taiga-ui/prettier-config",
     "devDependencies": {
         "@nx/rollup": "22.5.1",
