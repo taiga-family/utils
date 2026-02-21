@@ -28,10 +28,10 @@
     ],
     "prettier": "@taiga-ui/prettier-config",
     "devDependencies": {
-        "@nx/rollup": "22.5.1",
-        "@nx/workspace": "22.5.1",
+        "@nx/rollup": "22.5.2",
+        "@nx/workspace": "22.5.2",
         "@taiga-ui/configs": "0.420.0",
-        "nx": "22.5.1",
+        "nx": "22.5.2",
         "typescript": "5.8.3"
     },
     "cspell": {
