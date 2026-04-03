@@ -30,7 +30,7 @@
     "devDependencies": {
         "@nx/rollup": "22.6.4",
         "@nx/workspace": "22.6.4",
-        "@taiga-ui/configs": "0.423.0",
+        "@taiga-ui/configs": "0.452.0",
         "nx": "22.6.4",
         "typescript": "5.8.3"
     },
