@@ -32,6 +32,7 @@ export function tuiFontSizeWatcher(
 
     Object.assign(iframe.style, IFRAME);
     Object.assign(doc?.body.style || {}, BODY);
+    doc?.head.insertAdjacentHTML('beforeend', '<meta name="text-scale" content="scale">');
     doc?.documentElement.style.setProperty('font', '-apple-system-body');
     doc?.body.insertAdjacentText('beforeend', '.'.repeat(1000));
     observer.observe(doc?.body || iframe);
