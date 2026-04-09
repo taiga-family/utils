@@ -1,3 +1,10 @@
+### [0.6.0](https://github.com/taiga-family/utils/compare/v0.5.0...v0.6.0) (2026-04-09)
+
+### 🚀 Features
+
+- **font-watcher**: fix for Android WebView (#28)
+  [(c819dfc)](https://github.com/taiga-family/utils/commit/c819dfc25b2b5173dc2002f3360c9866e247abaf)
+
 ### [0.5.0](https://github.com/taiga-family/utils/compare/v0.4.0...v0.5.0) (2026-02-19)
 
 ### [0.4.0](https://github.com/taiga-family/utils/compare/v0.3.0...v0.4.0) (2026-02-18)
