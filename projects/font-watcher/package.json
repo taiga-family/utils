@@ -7,6 +7,12 @@
         "url": "https://github.com/taiga-family/utils.git"
     },
     "license": "Apache-2.0",
+    "contributors": [
+        {
+            "email": "alexander@inkin.ru",
+            "name": "Alex Inkin"
+        }
+    ],
     "publishConfig": {
         "access": "public"
     }
