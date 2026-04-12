@@ -1,13 +1,13 @@
 {
     "extends": "@taiga-ui/tsconfig",
     "compilerOptions": {
-        "rootDir": ".",
         "baseUrl": ".",
-        "incremental": true,
+        "rootDir": ".",
         "esModuleInterop": true,
+        "incremental": true,
+        "tsBuildInfoFile": "/dev/null",
         "typeRoots": ["node_modules/@types"],
-        "types": ["node"],
-        "tsBuildInfoFile": "/dev/null"
+        "types": ["node"]
     },
     "include": ["**/*.ts", "**/*.js"],
     "exclude": ["**/node_modules"]
