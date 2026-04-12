@@ -35,11 +35,11 @@
         "typescript": "5.8.3"
     },
     "cspell": {
-        "import": [
-            "@taiga-ui/cspell-config/cspell.config.js"
-        ],
         "files": [
             "*/*.*"
+        ],
+        "import": [
+            "@taiga-ui/cspell-config/cspell.config.js"
         ]
     },
     "syncer": {
