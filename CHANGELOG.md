@@ -1,3 +1,7 @@
+## [0.7.0](https://github.com/taiga-family/utils/compare/v0.6.0...v0.7.0) (2026-10-29)
+
+This release contains internal technical improvements only. No changes to functionality, UI, or APIs.
+
 ### [0.6.0](https://github.com/taiga-family/utils/compare/v0.5.0...v0.6.0) (2026-04-09)
 
 ### 🚀 Features
